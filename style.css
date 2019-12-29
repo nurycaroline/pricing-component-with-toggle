@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(240, 78%, 98%);
+  font: 700 15px "Montserrat";
+}
+
+.c-primary {
+  background-color: linear-gradient(
+    90deg,
+    hsl(236, 72%, 79%) 0%,
+    hsl(237, 63%, 64%) 100%
+  );
+}
+
+.c-gray-light {
+  color: hsl(234, 14%, 74%);
+}
+
+.c-gray {
+  color: hsl(233, 13%, 49%);
+}
+
+.c-dark-gray {
+  color: hsl(232, 13%, 33%);
+}
