@@ -1,58 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="./style.css">
-  
-  <title>Frontend Mentor | Pricing Component</title>
-</head>
-<body>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
 
-  <h1>Our Pricing</h1>
+    <title>Frontend Mentor | Pricing Component</title>
+  </head>
+  <body>
+    <img class="bg-top" src="./images/bg-top.svg" />
+    <img class="bg-bottom"" src="./images/bg-bottom.svg">
+    <h1 class="title c-gray">Our Pricing</h1>
 
-  <div class="toggle">
-    <label for="period">Annually</label>
-    <input type="checkbox" name="period">
-    <label for="period">Monthly</label>
-  </div>
-
-  <div class="plans">
-    <div class="basic">
-      <h2>Basic</h2>
-      <p class="monthly">&dollar;19.99</p>
-      <p class="annually">&dollar;199.99</p>
-      <p>500 GB Storage</p>
-      <p>2 Users Allowed</p>
-      <p>Send up to 3 GB</p>
-      <button>Learn More</button>    
+    <div class="toggle">
+      <label class="c-gray-light" for="period">Annually</label>
+      <label class="toggle-round">
+        <input type="checkbox" />
+        <span></span>
+      </label>
+      <label class="c-gray-light" for="period">Monthly</label>
     </div>
-    <div class="professional">
-      <h2>Professional</h2>
-      <p class="monthly">&dollar;24.99</p>
-      <p class="annually">&dollar;249.99</p>
-      <p>1 TB Storage</p>
-      <p>5 Users Allowed</p>
-      <p>Send up to 10 GB</p>
-      <button>Learn More</button>    
+
+    <div class="plans">
+      <div class="plan-item basic">
+        <h2>Basic</h2>
+        <p class="hidden monthly value">&dollar;<strong>19.99</strong></p>
+        <p class="annually value">&dollar;<strong>199.99</strong></p>
+        <p>500 GB Storage</p>
+        <p>2 Users Allowed</p>
+        <p>Send up to 3 GB</p>
+        <button class="c-primary">Learn More</button>
+      </div>
+      <div class="plan-item professional">
+        <h2>Professional</h2>
+        <p class="hidden monthly value">&dollar;<strong>24.99</strong></p>
+        <p class="annually value">&dollar;<strong>249.99</strong></p>
+        <p>1 TB Storage</p>
+        <p>5 Users Allowed</p>
+        <p>Send up to 10 GB</p>
+        <button>Learn More</button>
+      </div>
+      <div class="plan-item master">
+        <h2>Master</h2>
+        <p class="hidden monthly value">&dollar;<strong>39.99</strong></p>
+        <p class="annually value">&dollar;<strong>399.99</strong></p>
+        <p>2 TB Storage</p>
+        <p>10 Users Allowed</p>
+        <p>Send up to 20 GB</p>
+        <button class="c-primary">Learn More</button>
+      </div>
     </div>
-    <div class="master">
-      <h2>Master</h2>
-      <p class="monthly">&dollar;39.99</p>
-      <p class="annually">&dollar;399.99</p>
-      <p>2 TB Storage</p>
-      <p>10 Users Allowed</p>
-      <p>Send up to 20 GB</p>
-      <button>Learn More</button>    
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="http://nury.dev">NuryCaroline</a>.
     </div>
-  </div>
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="http://nury.dev">NuryCaroline</a>.
-  </div>
-</body>
+  </body>
 </html>
