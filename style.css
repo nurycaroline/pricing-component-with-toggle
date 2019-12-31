@@ -38,11 +38,13 @@ button {
   position: absolute;
   right: 0;
   top: 0;
+  z-index: -1;
 }
 
 .bg-bottom {
   position: absolute;
   bottom: 0;
+  z-index: -1;
 }
 
 .hidden {
@@ -260,7 +262,34 @@ input:checked + span:before {
 /* Footer */
 .attribution {
   position: absolute;
-  bottom: 0;
+  bottom: 10px;
   width: 100%;
   text-align: center;
+  font-weight: normal;
+}
+
+.attribution a {
+  color: hsl(237, 63%, 64%);
+}
+
+/* Mediaquery */
+
+@media (max-width: 375px) {
+  .bg-bottom {
+    display: none;
+  }
+
+  .plans {
+    flex-direction: column;
+    position: initial;
+  }
+
+  .plans .plan-item {
+    width: 70%;
+    margin-bottom: 35px;
+  }
+
+  .attribution {
+    position: initial;
+  }
 }
