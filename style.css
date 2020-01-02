@@ -92,10 +92,6 @@ button {
   transition: 0.4s;
 }
 
-input:checked + span {
-  opacity: 0.5;
-}
-
 input:checked + span:before {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
@@ -262,7 +258,7 @@ input:checked + span:before {
 /* Footer */
 .attribution {
   position: absolute;
-  bottom: 10px;
+  bottom: 5px;
   right: 10px;
   width: 100%;
   text-align: right;
